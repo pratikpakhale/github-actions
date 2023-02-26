@@ -1,0 +1,18 @@
+# give a name for the workflow
+name: First Workflow
+
+# give the event to trigger this workflow to run
+on: workflow_dispatch
+
+# write jobs
+jobs:
+  
+  # format - name: 
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello World"
+      - name: Goodbye
+        run: echo "Bbbye"
+        
