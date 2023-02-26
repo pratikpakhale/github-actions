@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs:
   log:
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
       - name: github logging
         run: echo "${{ toJSON(github) }}"
